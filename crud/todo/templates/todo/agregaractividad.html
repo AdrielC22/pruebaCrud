@@ -1,0 +1,10 @@
+{% extends 'todo/layout.html'%}
+{% block content %}
+
+<form method = "post">
+    {% csrf_token %} {{form}}
+    <button class="btn btn-primary" type="submit">Agregar Actividad</button>
+    
+</form>
+
+{% endblock %}
